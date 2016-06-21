@@ -1,0 +1,118 @@
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pinyon Script', cursive;
+  color: #CCCCCC; }
+
+p {
+  font-family: 'EB Garamond', serif;
+  color: #7B7C7F; }
+
+/*  SECTIONS  */
+section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%; }
+
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+.row:before,
+.row:after {
+  content: "";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.row {
+  zoom: 1;
+  /* For IE 6/7 */
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/*  GRID OF SIX  */
+.span_6_of_6 {
+  width: 100%; }
+
+.span_5_of_6 {
+  width: 82.83%; }
+
+.span_4_of_6 {
+  width: 65.66%; }
+
+.span_3_of_6 {
+  width: 48.5%; }
+
+.span_2_of_6 {
+  width: 31.33%; }
+
+.span_1_of_6 {
+  width: 14.16%; }
+
+nav {
+  text-align: center;
+  padding: 2.5% 0;
+  font-family: 'EB Garamond', serif; }
+  nav > * {
+    display: inline-block;
+    vertical-align: middle; }
+  nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: #CCCCCC; }
+
+.img100 {
+  width: 100%;
+  height: auto; }
+
+/*gallery*/
+.folio {
+  position: relative; }
+  .folio .description {
+    text-align: center;
+    transition: ease all .25s;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.25em;
+    position: absolute;
+    top: 33.33%;
+    width: 100%;
+    color: white;
+    z-index: 5;
+    display: block; }
+    .folio .description:before, .folio .description:after {
+      content: url(../img/curvedborder-white-01.svg);
+      display: block;
+      width: 30%;
+      margin: 0 auto;
+      text-align: center; }
+    .folio .description:after {
+      content: url(../img/curvedborder-white-02.svg); }
+  .folio:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+
+  .span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 {
+    width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */
