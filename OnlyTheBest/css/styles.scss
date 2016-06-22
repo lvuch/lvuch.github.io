@@ -1,14 +1,25 @@
-$lightGrey: #BFBFBD;
-$darkGrey: #40403F;
+---
+---
 
+$lightGrey : #ECECED;
+$midGrey   : #ABADB0;
+$darkGrey  : #7B7C7F;
+$blush     : #FDDED5;
+$blushDark : #FBC0B0;
+
+* {
+  transition: ease-in-out all .25s;
+  box-sizing: border-box;
+}
 body {
   font-family: 'EB Garamond', serif;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pinyon Script', cursive;
-  color: $lightGrey; 
+  color: $midGrey; 
 }
 
 p {
@@ -73,6 +84,11 @@ section {
     width: 14.16%;
 }
 
+/*helpers*/
+.text_center {
+  text-align: center;
+}
+
 nav {
   text-align: center;
   padding: 2.5% 0;
@@ -86,7 +102,11 @@ nav {
   a {
     text-decoration: none;
     padding: 10px;
-    color: $lightGrey;
+    color: $midGrey;
+
+    &:hover {
+      color: $blushDark;
+    }
   }
 }
 
@@ -98,43 +118,30 @@ nav {
 /*gallery*/
 .folio {
   position: relative;
-
+  background-color: $blush;
 
   .description {
     text-align: center;
     transition: ease all .25s;
     font-family: 'Pinyon Script', cursive;
-    font-size: 1.25em;
+    font-size: 1.45em;
     position: absolute;
     top: 33.33%;
     width: 100%;
-    color: white;
+    color: $darkGrey;
     z-index: 5;
     display: block;
-
-
-    &:before, &:after {
-      content: url(../img/curvedborder-white-01.svg);
-      display: block;
-      width: 30%;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-
-    &:after {
-      content: url(../img/curvedborder-white-02.svg);
-    }
+    opacity: 0;
   }
 
-  &:before {
-    content: "";
-    background-color: rgba(0,0,0,.7);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  &:hover {
+    img {
+      opacity: .25;
+    }
+
+    .description {
+      opacity: 1;
+    }
   }
 }
 

@@ -1,3 +1,9 @@
+---
+---
+
+$lightGrey: #BFBFBD;
+$darkGrey: #40403F;
+
 body {
   font-family: 'EB Garamond', serif;
   font-size: 18px;
@@ -5,12 +11,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pinyon Script', cursive;
-  color: #CCCCCC; 
+  color: $lightGrey; 
 }
 
 p {
   font-family: 'EB Garamond', serif;
-  color: #7B7C7F;
+  color: $darkGrey;
 }
 
 /*  SECTIONS  */
@@ -83,7 +89,7 @@ nav {
   a {
     text-decoration: none;
     padding: 10px;
-    color: #999;
+    color: $lightGrey;
   }
 }
 

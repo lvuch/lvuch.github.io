@@ -4,11 +4,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pinyon Script', cursive;
-  color: #CCCCCC; }
+  color: #BFBFBD; }
 
 p {
   font-family: 'EB Garamond', serif;
-  color: #7B7C7F; }
+  color: #40403F; }
 
 /*  SECTIONS  */
 section {
@@ -63,17 +63,14 @@ section {
 nav {
   text-align: center;
   padding: 2.5% 0;
-  font-family: 'EB Garamond', serif;
-  text-transform: uppercase; }
-
-nav > * {
-  display: inline-block;
-  vertical-align: middle; }
-
-nav a {
-  text-decoration: none;
-  padding: 10px;
-  color: #CCCCCC; }
+  font-family: 'EB Garamond', serif; }
+  nav > * {
+    display: inline-block;
+    vertical-align: middle; }
+  nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: #BFBFBD; }
 
 .img100 {
   width: 100%;
@@ -88,15 +85,15 @@ nav a {
     font-family: 'Pinyon Script', cursive;
     font-size: 1.25em;
     position: absolute;
-    top: 0;
+    top: 33.33%;
     width: 100%;
-    opacity: 0;
     color: white;
-    padding: 2%; }
+    z-index: 5;
+    display: block; }
     .folio .description:before, .folio .description:after {
       content: url(../img/curvedborder-white-01.svg);
       display: block;
-      width: 50%;
+      width: 30%;
       margin: 0 auto;
       text-align: center; }
     .folio .description:after {
@@ -117,5 +114,3 @@ nav a {
 
   .span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 {
     width: 100%; } }
-
-/*# sourceMappingURL=styles.css.map */
