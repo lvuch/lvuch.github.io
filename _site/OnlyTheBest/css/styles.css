@@ -1,15 +1,10 @@
-* {
-  transition: ease-in-out all .25s;
-  box-sizing: border-box; }
-
 body {
   font-family: 'EB Garamond', serif;
-  font-size: 16px;
-  line-height: 21px; }
+  font-size: 18px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pinyon Script', cursive;
-  color: #ABADB0; }
+  color: #CCCCCC; }
 
 p {
   font-family: 'EB Garamond', serif;
@@ -65,10 +60,6 @@ section {
 .span_1_of_6 {
   width: 14.16%; }
 
-/*helpers*/
-.text_center {
-  text-align: center; }
-
 nav {
   text-align: center;
   padding: 2.5% 0;
@@ -79,9 +70,7 @@ nav {
   nav a {
     text-decoration: none;
     padding: 10px;
-    color: #ABADB0; }
-    nav a:hover {
-      color: #FBC0B0; }
+    color: #CCCCCC; }
 
 .img100 {
   width: 100%;
@@ -89,24 +78,34 @@ nav {
 
 /*gallery*/
 .folio {
-  position: relative;
-  background-color: #FDDED5; }
+  position: relative; }
   .folio .description {
     text-align: center;
     transition: ease all .25s;
     font-family: 'Pinyon Script', cursive;
-    font-size: 1.45em;
+    font-size: 1.25em;
     position: absolute;
     top: 33.33%;
     width: 100%;
-    color: #7B7C7F;
+    color: white;
     z-index: 5;
-    display: block;
-    opacity: 0; }
-  .folio:hover img {
-    opacity: .25; }
-  .folio:hover .description {
-    opacity: 1; }
+    display: block; }
+    .folio .description:before, .folio .description:after {
+      content: url(../img/curvedborder-white-01.svg);
+      display: block;
+      width: 30%;
+      margin: 0 auto;
+      text-align: center; }
+    .folio .description:after {
+      content: url(../img/curvedborder-white-02.svg); }
+  .folio:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
@@ -115,3 +114,5 @@ nav {
 
   .span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 {
     width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */
